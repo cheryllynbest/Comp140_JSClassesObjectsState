@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import AccountsPOJO from "./AccountsPOJO";
 import CardComp from "./CardComp";
 
-
 class AccountsComp extends Component {
   constructor() {
     super()
@@ -60,12 +59,9 @@ class AccountsComp extends Component {
 
   render() {
     const CardList = this.controller.arrControl.map((item) => {
-      console.log("This is what item looks like:", item);
-      
       return(
         <CardComp key={item.id} account={item} delAcc={this.delAccount} depAcc={this.depAccount} witAcc={this.witAccount} />
       )
-      
     });
     
 
@@ -94,7 +90,6 @@ class AccountsComp extends Component {
           <h3> The min value is: { this.state.minValue } </h3>  
           <h3> The total value is: { this.state.total } </h3> 
         </div>
-
 
       </div>
     )

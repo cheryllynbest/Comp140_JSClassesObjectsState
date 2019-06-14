@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import LogoComponent from './logocomponent';
+import LogoComp from './LogoComp';
 import logo from './logo.svg';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
         <h1> Hello - Welcome to Your Account </h1>
 
         <header className="App-header">
-          <LogoComponent />
+          <LogoComp />
         </header>
 
         <img src={logo} className="App-logo" alt="logo" />

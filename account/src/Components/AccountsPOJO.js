@@ -1,15 +1,14 @@
-
 import AccountPOJO from './AccountPOJO'
 
 class AccountsPOJO {
     constructor() {       
        this.arrControl = [];
-       this.counter = 0;
+       this.counter = 1;
     }
 
     addAccounts(balance, name) {
         let id = this.counter;
-        const tempAccount = new AccountPOJO(balance, name, id)
+        const tempAccount = new AccountPOJO(balance, name, id);
         this.arrControl.push(tempAccount);
         this.counter++;
     }
@@ -39,11 +38,11 @@ class AccountsPOJO {
     maxAccount = () => {
         if (this.arrControl.length>0) {        
             const maxValue = Math.max.apply(Math, this.generateAccountBalanceArray());
+            console.log("This is max value:", maxValue)
             return Number(maxValue);
         } else {
             return 0;
         }
-
     }
 
     totalAccount = () => {

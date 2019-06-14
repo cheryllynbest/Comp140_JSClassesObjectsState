@@ -21,11 +21,6 @@ class AccountPOJO {
         return this.balance;
     }
 
-    getID() {
-        return this.id;
-    }
-
-
 }
 
 export default AccountPOJO;

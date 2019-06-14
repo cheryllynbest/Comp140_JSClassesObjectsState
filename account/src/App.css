@@ -54,3 +54,9 @@
   border: 5px solid;
   border-color: white;
 }
+
+.NodeDesign {
+  color: #7bfb61;
+  border: 10px solid;
+  border-color: rgb(34, 27, 27);
+}

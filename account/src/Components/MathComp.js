@@ -34,11 +34,8 @@ class MathComp extends Component {
   } 
  
 
-  render() {
-        
+  render() { 
     let { result } = this.state;
-    console.log ("in MathComp")
-    console.log("This is the result:", result)
 
       return (
           <div className="App">

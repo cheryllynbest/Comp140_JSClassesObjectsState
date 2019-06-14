@@ -1,17 +1,17 @@
-function sum(a, b) {
+function add(a, b) {
     return a + b;
 }
 
-function divide(a,b) {
+function div(a,b) {
     return a / b;
 }
 
-function subtract(a,b) {
+function sub(a,b) {
     return (a-b);
 }
 
-function multiply(a,b) {
+function mult(a,b) {
     return a*b;
 }
 
-export default { sum, multiply, divide, subtract }
+export default { add, mult, div, sub }
